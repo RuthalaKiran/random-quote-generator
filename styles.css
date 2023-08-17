@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(91, 150, 218);
+   
+}
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow-y: auto;
+}
+
+.random-quote{
+    background-color:white;
+    width: 800px;
+    /* height: 450px; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px  red;
+     padding: 20px 30px !important;
+     /* overflow-y: auto; */
+}
+.quote-head{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.quote-head::before{
+    content: ' ' !important;
+    width: 100px !important;
+    height: 4px !important;
+    z-index: 5;
+    position: absolute !important;
+    bottom: -10px;
+    left: 50%;
+   transform: translate(-50%);
+    background: blue;
+    border-radius: 10px;
+}
+.quote-body{
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+.quote-body::after , .quote-body::before{
+    content: '"';
+}
+.quote-author{
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    
+}
+/* .quote-author::before{
+    content: '' !important;
+    width: 28px !important;
+    height: 2px !important;
+    background-color: black;
+    position: absolute;
+    top: 12px;
+    left: 84%;
+} */
+button{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid blue;
+    margin: 20px;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px !important;
+
+}
+button:hover{
+    border-radius: 20px;
+    background-color: blueviolet;
+}
+button:hover i{
+    color: white;
+}
+button i{
+    font-size: 20px !important;
+    position: absolute;
+    left: 8px;
+    bottom: 7px;
+}
+.spl{
+    padding-left: 25px !important;
+ 
+}
+
+@media screen and (max-width:520px) {
+    button{
+       margin: 10px;
+       width: 95px;
+       font-size: 13px;
+        
+
+    } 
+    .quote-head{
+        font-size: 30px;
+    }
+    .quote-body{
+        font-size: 25px;
+    }
+}
