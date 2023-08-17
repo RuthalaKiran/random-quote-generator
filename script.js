@@ -14,3 +14,6 @@ newquote(api);
 function twiter(){
   window.open("https://twitter.com/intent/tweet?text=" +quotebody.innerHTML)
 }
+function copy(){
+  navigator.clipboard.writeText(quotebody.innerHTML);
+}
